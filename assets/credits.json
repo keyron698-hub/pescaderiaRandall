@@ -1,0 +1,57 @@
+{
+  "hero-fish": {
+    "src": "assets/img/hero-fish.jpg",
+    "title": "Fish on the slab.",
+    "creator": "Bernard Spragg",
+    "creator_url": "https://www.flickr.com/photos/88123769@N02",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/88123769@N02/15506980061",
+    "source": "flickr"
+  },
+  "seafood-shrimp": {
+    "src": "assets/img/seafood-shrimp.jpg",
+    "title": "#shrimp #prawns #cooking #mmm #seafood #shellfish #lobster #crab #seafoodsauce #shells #exoskeleton #hungry #pimpin #swag #canada #canadian #water #sea #ocean",
+    "creator": "ikeepemclean",
+    "creator_url": "https://www.flickr.com/photos/65445585@N05",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/65445585@N05/8075268757",
+    "source": "flickr"
+  },
+  "seafood-fish": {
+    "src": "assets/img/seafood-fish.jpg",
+    "title": "Quick fillet of tuna for sashimi on a sailing yacht at sea",
+    "creator": "Phuketian.S",
+    "creator_url": "https://www.flickr.com/photos/124790945@N06",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/124790945@N06/49038051201",
+    "source": "flickr"
+  },
+  "seafood-octopus": {
+    "src": "assets/img/seafood-octopus.jpg",
+    "title": "#octopus #seafood #sushi #market #fresh #dailycatch",
+    "creator": "@JuanCalamar",
+    "creator_url": "https://www.flickr.com/photos/96972977@N08",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/96972977@N08/8938179608",
+    "source": "flickr"
+  },
+  "seafood-ceviche": {
+    "src": "assets/img/seafood-ceviche.jpg",
+    "title": "Chorrillos, Lima, Peru",
+    "creator": "josewolff",
+    "creator_url": "https://www.flickr.com/photos/85049343@N00",
+    "license": "by-nc-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/85049343@N00/3950985952",
+    "source": "flickr"
+  }
+}
