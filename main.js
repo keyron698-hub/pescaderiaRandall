@@ -1,93 +1,8 @@
 (function () {
   "use strict";
 
-  /* ─── Datos de productos y recetas ─── */
-  var RECIPES = {
-    "corvina-entera": {
-      title: "Ceviche de Corvina",
-      desc: "El clásico tico que nunca falla. La corvina fresca con limón, culantro y chile congo es de otro mundo 🤤",
-      img: "assets/img/seafood-ceviche.jpg",
-      ingredients: ["Corvina fresca", "Limón criollo", "Culantro", "Cebolla morada", "Chile congo", "Sal al gusto"]
-    },
-    "corvina-filete": {
-      title: "Corvina a la Plancha",
-      desc: "Filete a la plancha con arroz blanco y patacones bien doraditos. Simple, delicioso, costarricense 🇨🇷",
-      img: "assets/img/seafood-fish.jpg",
-      ingredients: ["Filete de corvina", "Ajo", "Mantequilla", "Limón", "Arroz blanco", "Patacones"]
-    },
-    "tilapia-entera": {
-      title: "Tilapia Frita con Ensalada",
-      desc: "Tilapia frita crocante, acompañada de ensalada fresca y arroz con frijoles. ¡Eso sí es almuerzo!",
-      img: "assets/img/seafood-fish.jpg",
-      ingredients: ["Tilapia entera", "Ajo molido", "Comino", "Aceite vegetal", "Arroz", "Frijoles"]
-    },
-    "tilapia-filete": {
-      title: "Tilapia al Ajillo",
-      desc: "Filete bañado en salsa de ajo y mantequilla. Con arroz y plátanos maduros, un lujo sencillo 🧄",
-      img: "assets/img/seafood-fish.jpg",
-      ingredients: ["Filete de tilapia", "Ajo picado", "Mantequilla", "Perejil", "Limón", "Pimienta"]
-    },
-    "dorado": {
-      title: "Dorado Empanizado",
-      desc: "Empanizado con pan rallado y especias, frito hasta quedare doradito. Con ensalada de repollo 😋",
-      img: "assets/img/seafood-fish.jpg",
-      ingredients: ["Dorado en filete", "Pan rallado", "Huevo", "Ajo en polvo", "Pimentón", "Aceite"]
-    },
-    "atun": {
-      title: "Tataki de Atún",
-      desc: "Atún sellado por fuera, rosado por dentro. Con soya y ajonjolí. ¡Nivel restaurante desde tu cocina!",
-      img: "assets/img/seafood-fish.jpg",
-      ingredients: ["Atún fresco", "Salsa de soya", "Ajonjolí", "Jengibre", "Lima", "Aceite de sésamo"]
-    },
-    "camarones-medianos": {
-      title: "Arroz con Camarones",
-      desc: "Arroz cremoso con camarones medianos, culantro y chile dulce. El favorito de todos en casa 🍚",
-      img: "assets/img/seafood-shrimp.jpg",
-      ingredients: ["Camarones medianos", "Arroz", "Culantro", "Chile dulce", "Cebolla", "Ajo"]
-    },
-    "camarones-grandes": {
-      title: "Camarones al Ajillo",
-      desc: "Camarones grandes salteados en aceite de oliva con ajo y vino blanco. Se acaban en segundos 🧄🍷",
-      img: "assets/img/seafood-shrimp.jpg",
-      ingredients: ["Camarones grandes", "Ajo", "Aceite de oliva", "Vino blanco", "Perejil", "Limón"]
-    },
-    "pulpo": {
-      title: "Pulpo a la Gallega",
-      desc: "Pulpo cocido tierno, con aceite de oliva, pimentón y papas. Un viaje a Galicia sin salir de Coronado 🐙",
-      img: "assets/img/seafood-octopus.jpg",
-      ingredients: ["Pulpo fresco", "Papas", "Pimentón dulce", "Aceite de oliva", "Sal gruesa", "Laurel"]
-    },
-    "calamar": {
-      title: "Calamares a la Romana",
-      desc: "Aros de calamar empanizados y fritos, crujientes por fuera y tiernos por dentro. Con salsa tártara 🦑",
-      img: "assets/img/seafood-octopus.jpg",
-      ingredients: ["Calamar en aros", "Harina de trigo", "Huevo", "Pan rallado", "Sal", "Aceite para freír"]
-    },
-    "mejillones": {
-      title: "Mejillones al Vapor",
-      desc: "Al vapor con vino blanco, ajo y perejil. Abritos al momento, con el mar en cada bocado 🫙",
-      img: "assets/img/seafood-shrimp.jpg",
-      ingredients: ["Mejillones frescos", "Vino blanco", "Ajo", "Mantequilla", "Perejil", "Limón"]
-    },
-    "langostinos": {
-      title: "Langostinos a la Plancha",
-      desc: "A la plancha con mantequilla de hierbas y un toque de brandy. Pa' darse un gustazo especial 🦞✨",
-      img: "assets/img/seafood-shrimp.jpg",
-      ingredients: ["Langostinos", "Mantequilla", "Tomillo", "Ajo", "Brandy", "Limón"]
-    },
-    "bagre": {
-      title: "Bagre Frito Tico",
-      desc: "El clásico de las sodas ticas. Frito con achiote, acompañado de arroz, frijoles y patacones 🍽️",
-      img: "assets/img/seafood-fish.jpg",
-      ingredients: ["Bagre fresco", "Achiote", "Ajo", "Comino", "Sal", "Aceite para freír"]
-    },
-    "mixtos": {
-      title: "Sopa de Mariscos",
-      desc: "Sopa espesa y reconfortante con todos los mariscos. La mejor para un día lluvioso en Moravia ☔🍲",
-      img: "assets/img/seafood-shrimp.jpg",
-      ingredients: ["Mariscos mixtos", "Leche de coco", "Papa", "Culantro", "Ajo", "Cebolla"]
-    }
-  };
+  /* ─── Recetas sugeridas (opcional por producto) ─── */
+  var RECIPES = {};
 
   /* ─── Estado global ─── */
   var cart = JSON.parse(localStorage.getItem("ebenezer_cart") || "[]");
@@ -658,6 +573,92 @@
     renderDirecciones();
   };
 
+  /* ─── Pedidos por encargo ─── */
+  var encargoItems = JSON.parse(localStorage.getItem("ebenezer_encargo") || "[]");
+
+  function saveEncargo() {
+    localStorage.setItem("ebenezer_encargo", JSON.stringify(encargoItems));
+  }
+
+  function renderEncargo() {
+    var list = document.getElementById("encargo-list");
+    var customer = document.getElementById("encargo-customer");
+    if (!list) return;
+    if (encargoItems.length === 0) {
+      list.innerHTML = '<div class="encargo-empty">Aún no has agregado productos a tu encargo 📝</div>';
+      if (customer) customer.style.display = "none";
+      return;
+    }
+    list.innerHTML = encargoItems.map(function (it, i) {
+      return [
+        '<div class="encargo-item">',
+        '  <span class="encargo-item-name">🐟 ' + it.producto + '</span>',
+        '  <span class="encargo-item-qty">' + it.cantidad + '</span>',
+        '  <button type="button" class="encargo-remove" data-encargo-remove="' + i + '" aria-label="Quitar producto">',
+        '    <i class="fas fa-trash"></i>',
+        '  </button>',
+        '</div>'
+      ].join("");
+    }).join("");
+    if (customer) customer.style.display = "block";
+  }
+
+  function initEncargos() {
+    var form = document.getElementById("encargo-form");
+    if (!form) return;
+    renderEncargo();
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var prodEl = document.getElementById("encargo-producto");
+      var qtyEl = document.getElementById("encargo-cantidad");
+      var note = document.getElementById("encargo-note");
+      var producto = prodEl.value.trim();
+      var cantidad = qtyEl.value.trim() || "1";
+      if (!producto) {
+        if (note) note.textContent = "Escribí el nombre del producto que querés encargar.";
+        prodEl.focus();
+        return;
+      }
+      encargoItems.push({ producto: producto, cantidad: cantidad });
+      saveEncargo();
+      prodEl.value = "";
+      qtyEl.value = "";
+      if (note) note.textContent = "";
+      renderEncargo();
+      prodEl.focus();
+    });
+
+    document.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-encargo-remove]");
+      if (!btn) return;
+      var i = parseInt(btn.getAttribute("data-encargo-remove"), 10);
+      encargoItems.splice(i, 1);
+      saveEncargo();
+      renderEncargo();
+    });
+
+    var sendBtn = document.getElementById("encargo-send");
+    if (sendBtn) sendBtn.addEventListener("click", function () {
+      if (encargoItems.length === 0) return;
+      var name = (document.getElementById("encargo-name").value || "").trim();
+      var phone = (document.getElementById("encargo-phone").value || "").trim();
+      var notas = (document.getElementById("encargo-notas").value || "").trim();
+      if (!name || !phone) { alert("Por favor completá tu nombre y teléfono."); return; }
+      var itemsText = encargoItems.map(function (it) {
+        return "• " + it.producto + " — " + it.cantidad;
+      }).join("\n");
+      var msg = encodeURIComponent(
+        "¡Hola Randall! Quiero hacer un pedido por encargo 🐟\n\n" +
+        "👤 Nombre: " + name + "\n" +
+        "📱 Teléfono: " + phone + "\n\n" +
+        "📝 Productos por encargo:\n" + itemsText +
+        (notas ? "\n\n🗒️ Notas: " + notas : "")
+      );
+      window.open("https://wa.me/50655436622?text=" + msg, "_blank");
+    });
+  }
+
   /* ─── GSAP Animaciones ─── */
   function initGSAP() {
     if (!window.gsap || !window.ScrollTrigger) return;
@@ -688,6 +689,7 @@
     safe(initCart, "initCart");
     safe(initCheckout, "initCheckout");
     safe(initAccount, "initAccount");
+    safe(initEncargos, "initEncargos");
     safe(initGSAP, "initGSAP");
   }
 

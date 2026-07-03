@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pescadería Ebenezer — Pescado y mariscos frescos del día en Platanares de Moravia, Coronado. Pedidos a domicilio. Randall Valdez. Tel: 5543-6622." />
-  <title>Pescadería Ebenezer 🐟 | Platanares de Moravia</title>
+  <meta name="description" content="Pescadería Ebenezer — Pescado y mariscos frescos del día en Platanares de Heredia. Pedidos a domicilio. Randall Valdez. Tel: 5543-6622." />
+  <title>Pescadería Ebenezer 🐟 | Platanares de Heredia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css?v=20260608" />
+  <link rel="stylesheet" href="styles.css?v=20260703" />
 </head>
 <body data-theme="ocean">
 
@@ -34,6 +34,7 @@
       </a>
       <ul class="nav-links">
         <li><a href="#productos">Productos</a></li>
+        <li><a href="#encargos">Por encargo</a></li>
         <li><a href="#entregas">Entregas</a></li>
         <li><a href="#info">Nosotros</a></li>
       </ul>
@@ -52,6 +53,7 @@
     </div>
     <div class="nav-mobile" id="nav-mobile">
       <a href="#productos">Productos</a>
+      <a href="#encargos">Por encargo</a>
       <a href="#entregas">Entregas</a>
       <a href="#info">Nosotros</a>
     </div>
@@ -72,7 +74,7 @@
       <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
     </div>
     <div class="hero-content">
-      <p class="hero-kicker">🐟 Platanares de Moravia · Coronado</p>
+      <p class="hero-kicker">🐟 Platanares de Heredia</p>
       <h1 class="hero-title">El pescado<br><em>más fresco</em><br>de la zona</h1>
       <p class="hero-sub">Directo al punto, sin rodeos. Corvina, tilapia, camarones, mariscos frescos del día. ¡Pura vida, Randall te atiende!</p>
       <div class="hero-ctas">
@@ -82,7 +84,7 @@
       <div class="hero-stats">
         <div class="stat"><span class="stat-num" data-count="100">0</span><span>%</span><p>Fresco</p></div>
         <div class="stat-div"></div>
-        <div class="stat"><span class="stat-num" data-count="11">0</span><span>+</span><p>Productos</p></div>
+        <div class="stat"><span class="stat-num" data-count="13">0</span><span>+</span><p>Productos</p></div>
         <div class="stat-div"></div>
         <div class="stat"><span class="stat-num" data-count="5">0</span><span>★</span><p>Calidad</p></div>
       </div>
@@ -98,258 +100,242 @@
       <div class="section-header">
         <p class="section-kicker">Lo que tenemos hoy</p>
         <h2 class="section-title">Productos <em>frescos</em></h2>
-        <p class="section-sub">Seleccioná tu producto y te recomendamos un platillo delicioso 🍽️</p>
+        <p class="section-sub">Todo fresco del día. Elegí tus productos y armá tu pedido 🛒</p>
       </div>
 
       <!-- Categorías -->
       <div class="cat-tabs" role="tablist">
         <button class="cat-tab active" data-cat="all" role="tab" aria-selected="true">Todos</button>
+        <button class="cat-tab" data-cat="caldosas" role="tab">Caldosas 🍲</button>
         <button class="cat-tab" data-cat="peces" role="tab">Peces 🐟</button>
         <button class="cat-tab" data-cat="mariscos" role="tab">Mariscos 🦐</button>
-        <button class="cat-tab" data-cat="especiales" role="tab">Especiales 🌟</button>
+        <button class="cat-tab" data-cat="otros" role="tab">Otros 🌟</button>
       </div>
 
       <div class="products-grid" id="products-grid" data-products>
 
-        <!-- Corvina entera -->
-        <article class="product-card reveal" data-cat="peces" data-product-id="corvina-entera">
+        <!-- Caldosa de pescado -->
+        <article class="product-card reveal" data-cat="caldosas" data-product-id="caldosa-pescado">
           <div class="product-img-wrap">
-            <img src="assets/img/seafood-fish.jpg" alt="Corvina entera fresca" loading="lazy" />
+            <img src="assets/img/seafood-fish.jpg" alt="Caldosa de pescado" loading="lazy" />
+            <span class="product-badge">🍲 Caldosa</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Caldosa de Pescado</h3>
+            <p class="product-desc">Caldito reconfortante de pescado fresco 🐟</p>
+            <div class="product-footer">
+              <span class="product-price">₡1,400<small>/porción</small></span>
+              <button class="btn-add" data-id="caldosa-pescado" data-name="Caldosa de Pescado" data-price="1400" aria-label="Agregar caldosa de pescado al carrito">
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Caldosa pescado con camarón -->
+        <article class="product-card reveal" data-cat="caldosas" data-product-id="caldosa-camaron">
+          <div class="product-img-wrap">
+            <img src="assets/img/seafood-shrimp.jpg" alt="Caldosa de pescado con camarón" loading="lazy" />
+            <span class="product-badge">🍲 Caldosa</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Caldosa Pescado con Camarón</h3>
+            <p class="product-desc">Pescado y camarón en un solo caldito 🦐</p>
+            <div class="product-footer">
+              <span class="product-price">₡1,800<small>/porción</small></span>
+              <button class="btn-add" data-id="caldosa-camaron" data-name="Caldosa Pescado con Camarón" data-price="1800" aria-label="Agregar caldosa de pescado con camarón al carrito">
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Caldosa pescado, camarón y calamar -->
+        <article class="product-card reveal" data-cat="caldosas" data-product-id="caldosa-mixta">
+          <div class="product-img-wrap">
+            <img src="assets/img/seafood-shrimp.jpg" alt="Caldosa de pescado, camarón y calamar" loading="lazy" />
             <span class="product-badge">🌟 Popular</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Corvina Entera</h3>
-            <p class="product-desc">Fresquita del día, lista para el ceviche 🤤</p>
+            <h3 class="product-name">Caldosa Pescado, Camarón y Calamar</h3>
+            <p class="product-desc">La completa: pescado, camarón y calamar 🦑</p>
             <div class="product-footer">
-              <span class="product-price">₡3,500<small>/kg</small></span>
-              <button class="btn-add" data-id="corvina-entera" data-name="Corvina Entera" data-price="3500" aria-label="Agregar corvina entera al carrito">
+              <span class="product-price">₡2,500<small>/porción</small></span>
+              <button class="btn-add" data-id="caldosa-mixta" data-name="Caldosa Pescado, Camarón y Calamar" data-price="2500" aria-label="Agregar caldosa completa al carrito">
                 <i class="fas fa-plus"></i> Agregar
               </button>
             </div>
           </div>
         </article>
 
-        <!-- Corvina filete -->
-        <article class="product-card reveal" data-cat="peces" data-product-id="corvina-filete">
+        <!-- Chuleta de bolillo -->
+        <article class="product-card reveal" data-cat="peces" data-product-id="chuleta-bolillo">
           <div class="product-img-wrap">
-            <img src="assets/img/seafood-fish.jpg" alt="Filete de corvina fresco" loading="lazy" />
+            <img src="assets/img/seafood-fish.jpg" alt="Chuleta de bolillo fresca" loading="lazy" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Filete de Corvina</h3>
-            <p class="product-desc">Sin espinas, listo para la plancha 👨‍🍳</p>
+            <h3 class="product-name">Chuleta de Bolillo</h3>
+            <p class="product-desc">Corte jugoso, ideal a la plancha 🔥</p>
             <div class="product-footer">
-              <span class="product-price">₡5,200<small>/kg</small></span>
-              <button class="btn-add" data-id="corvina-filete" data-name="Filete de Corvina" data-price="5200" aria-label="Agregar filete de corvina al carrito">
+              <span class="product-price">₡6,000<small>/kg</small></span>
+              <button class="btn-add" data-id="chuleta-bolillo" data-name="Chuleta de Bolillo" data-price="6000" aria-label="Agregar chuleta de bolillo al carrito">
                 <i class="fas fa-plus"></i> Agregar
               </button>
             </div>
           </div>
         </article>
 
-        <!-- Tilapia entera -->
-        <article class="product-card reveal" data-cat="peces" data-product-id="tilapia-entera">
+        <!-- Filet de tilapia importada -->
+        <article class="product-card reveal" data-cat="peces" data-product-id="filet-tilapia">
           <div class="product-img-wrap">
-            <img src="assets/img/seafood-fish.jpg" alt="Tilapia entera fresca" loading="lazy" />
+            <img src="assets/img/seafood-fish.jpg" alt="Filet de tilapia importada" loading="lazy" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Tilapia Entera</h3>
-            <p class="product-desc">Fresquita, ideal frita con patacones 🍟</p>
+            <h3 class="product-name">Filet de Tilapia Importada</h3>
+            <p class="product-desc">Sin espinas, limpio y listo para cocinar 🧑‍🍳</p>
             <div class="product-footer">
-              <span class="product-price">₡2,800<small>/kg</small></span>
-              <button class="btn-add" data-id="tilapia-entera" data-name="Tilapia Entera" data-price="2800" aria-label="Agregar tilapia entera al carrito">
+              <span class="product-price">₡4,500<small>/kg</small></span>
+              <button class="btn-add" data-id="filet-tilapia" data-name="Filet de Tilapia Importada" data-price="4500" aria-label="Agregar filet de tilapia importada al carrito">
                 <i class="fas fa-plus"></i> Agregar
               </button>
             </div>
           </div>
         </article>
 
-        <!-- Tilapia filete -->
-        <article class="product-card reveal" data-cat="peces" data-product-id="tilapia-filete">
+        <!-- Pescado entero -->
+        <article class="product-card reveal" data-cat="peces" data-product-id="pescado-entero">
           <div class="product-img-wrap">
-            <img src="assets/img/seafood-fish.jpg" alt="Filete de tilapia fresco" loading="lazy" />
+            <img src="assets/img/seafood-fish.jpg" alt="Pescado entero fresco" loading="lazy" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Filete de Tilapia</h3>
-            <p class="product-desc">Limpia y lista para cualquier receta 🧑‍🍳</p>
+            <h3 class="product-name">Pescado Entero</h3>
+            <p class="product-desc">Fresquito del día, ideal frito 🍟</p>
             <div class="product-footer">
-              <span class="product-price">₡4,100<small>/kg</small></span>
-              <button class="btn-add" data-id="tilapia-filete" data-name="Filete de Tilapia" data-price="4100" aria-label="Agregar filete de tilapia al carrito">
+              <span class="product-price">₡4,500<small>/kg</small></span>
+              <button class="btn-add" data-id="pescado-entero" data-name="Pescado Entero" data-price="4500" aria-label="Agregar pescado entero al carrito">
                 <i class="fas fa-plus"></i> Agregar
               </button>
             </div>
           </div>
         </article>
 
-        <!-- Dorado -->
-        <article class="product-card reveal" data-cat="peces" data-product-id="dorado">
+        <!-- Pargo -->
+        <article class="product-card reveal" data-cat="peces" data-product-id="pargo">
           <div class="product-img-wrap">
-            <img src="assets/img/seafood-fish.jpg" alt="Dorado mahi-mahi fresco" loading="lazy" />
+            <img src="assets/img/seafood-fish.jpg" alt="Pargo fresco" loading="lazy" />
             <span class="product-badge badge-gold">⭐ Premium</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Dorado (Mahi-Mahi)</h3>
-            <p class="product-desc">El rey de las recetas costeras 👑</p>
-            <div class="product-footer">
-              <span class="product-price">₡7,500<small>/kg</small></span>
-              <button class="btn-add" data-id="dorado" data-name="Dorado (Mahi-Mahi)" data-price="7500" aria-label="Agregar dorado al carrito">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Atún -->
-        <article class="product-card reveal" data-cat="peces" data-product-id="atun">
-          <div class="product-img-wrap">
-            <img src="assets/img/seafood-fish.jpg" alt="Atún fresco" loading="lazy" />
-            <span class="product-badge badge-gold">⭐ Premium</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Atún Fresco</h3>
-            <p class="product-desc">Del Pacífico, recién llegado hoy 🌊</p>
-            <div class="product-footer">
-              <span class="product-price">₡8,200<small>/kg</small></span>
-              <button class="btn-add" data-id="atun" data-name="Atún Fresco" data-price="8200" aria-label="Agregar atún al carrito">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Camarones medianos -->
-        <article class="product-card reveal" data-cat="mariscos" data-product-id="camarones-medianos">
-          <div class="product-img-wrap">
-            <img src="assets/img/seafood-shrimp.jpg" alt="Camarones medianos frescos" loading="lazy" />
-            <span class="product-badge">🌟 Popular</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Camarones Medianos</h3>
-            <p class="product-desc">Perfectos para arroz con camarones 🍚</p>
-            <div class="product-footer">
-              <span class="product-price">₡6,800<small>/kg</small></span>
-              <button class="btn-add" data-id="camarones-medianos" data-name="Camarones Medianos" data-price="6800" aria-label="Agregar camarones medianos al carrito">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Camarones grandes -->
-        <article class="product-card reveal" data-cat="mariscos" data-product-id="camarones-grandes">
-          <div class="product-img-wrap">
-            <img src="assets/img/seafood-shrimp.jpg" alt="Camarones grandes frescos" loading="lazy" />
-            <span class="product-badge badge-gold">⭐ Premium</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Camarones Grandes</h3>
-            <p class="product-desc">Jumbo, al ajillo quedan de rechupete 😍</p>
-            <div class="product-footer">
-              <span class="product-price">₡9,500<small>/kg</small></span>
-              <button class="btn-add" data-id="camarones-grandes" data-name="Camarones Grandes" data-price="9500" aria-label="Agregar camarones grandes al carrito">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Pulpo -->
-        <article class="product-card reveal" data-cat="mariscos" data-product-id="pulpo">
-          <div class="product-img-wrap">
-            <img src="assets/img/seafood-octopus.jpg" alt="Pulpo fresco" loading="lazy" />
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Pulpo</h3>
-            <p class="product-desc">Pa' la gallega o ensalada, brutísimo 🐙</p>
-            <div class="product-footer">
-              <span class="product-price">₡11,000<small>/kg</small></span>
-              <button class="btn-add" data-id="pulpo" data-name="Pulpo" data-price="11000" aria-label="Agregar pulpo al carrito">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Calamar -->
-        <article class="product-card reveal" data-cat="mariscos" data-product-id="calamar">
-          <div class="product-img-wrap">
-            <img src="assets/img/seafood-octopus.jpg" alt="Calamar fresco" loading="lazy" />
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Calamar</h3>
-            <p class="product-desc">Frito o en pasta, siempre queda rico 🦑</p>
+            <h3 class="product-name">Pargo</h3>
+            <p class="product-desc">El favorito para freír entero 👑</p>
             <div class="product-footer">
               <span class="product-price">₡8,500<small>/kg</small></span>
-              <button class="btn-add" data-id="calamar" data-name="Calamar" data-price="8500" aria-label="Agregar calamar al carrito">
+              <button class="btn-add" data-id="pargo" data-name="Pargo" data-price="8500" aria-label="Agregar pargo al carrito">
                 <i class="fas fa-plus"></i> Agregar
               </button>
             </div>
           </div>
         </article>
 
-        <!-- Mejillones -->
-        <article class="product-card reveal" data-cat="mariscos" data-product-id="mejillones">
+        <!-- Posta de vela -->
+        <article class="product-card reveal" data-cat="peces" data-product-id="posta-vela">
           <div class="product-img-wrap">
-            <img src="assets/img/seafood-shrimp.jpg" alt="Mejillones frescos" loading="lazy" />
+            <img src="assets/img/seafood-fish.jpg" alt="Posta de pez vela" loading="lazy" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Mejillones</h3>
-            <p class="product-desc">Al vapor con limón, ideal para picar 🫙</p>
+            <h3 class="product-name">Posta de Vela</h3>
+            <p class="product-desc">Posta gruesa de pez vela, sin espinas 🌊</p>
             <div class="product-footer">
-              <span class="product-price">₡5,500<small>/kg</small></span>
-              <button class="btn-add" data-id="mejillones" data-name="Mejillones" data-price="5500" aria-label="Agregar mejillones al carrito">
+              <span class="product-price">₡5,000<small>/kg</small></span>
+              <button class="btn-add" data-id="posta-vela" data-name="Posta de Vela" data-price="5000" aria-label="Agregar posta de vela al carrito">
                 <i class="fas fa-plus"></i> Agregar
               </button>
             </div>
           </div>
         </article>
 
-        <!-- Langostinos -->
-        <article class="product-card reveal" data-cat="especiales" data-product-id="langostinos">
+        <!-- Mariscada -->
+        <article class="product-card reveal" data-cat="mariscos" data-product-id="mariscada">
           <div class="product-img-wrap">
-            <img src="assets/img/seafood-shrimp.jpg" alt="Langostinos frescos" loading="lazy" />
-            <span class="product-badge badge-gold">⭐ Premium</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Langostinos</h3>
-            <p class="product-desc">Pa' darse un gustito de vez en cuando 🦞</p>
-            <div class="product-footer">
-              <span class="product-price">₡13,500<small>/kg</small></span>
-              <button class="btn-add" data-id="langostinos" data-name="Langostinos" data-price="13500" aria-label="Agregar langostinos al carrito">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Bagre -->
-        <article class="product-card reveal" data-cat="peces" data-product-id="bagre">
-          <div class="product-img-wrap">
-            <img src="assets/img/seafood-fish.jpg" alt="Bagre fresco" loading="lazy" />
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Bagre</h3>
-            <p class="product-desc">Tradicional tico, frito con arroz 🍽️</p>
-            <div class="product-footer">
-              <span class="product-price">₡2,200<small>/kg</small></span>
-              <button class="btn-add" data-id="bagre" data-name="Bagre" data-price="2200" aria-label="Agregar bagre al carrito">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Mariscos mixtos -->
-        <article class="product-card reveal" data-cat="especiales" data-product-id="mixtos">
-          <div class="product-img-wrap">
-            <img src="assets/img/seafood-shrimp.jpg" alt="Mariscos mixtos frescos" loading="lazy" />
+            <img src="assets/img/seafood-shrimp.jpg" alt="Mariscada mixta" loading="lazy" />
             <span class="product-badge">🌟 Popular</span>
           </div>
           <div class="product-info">
-            <h3 class="product-name">Mariscos Mixtos</h3>
-            <p class="product-desc">Combo de la casa, pa' la sopa o arroz 🥘</p>
+            <h3 class="product-name">Mariscada</h3>
+            <p class="product-desc">Mezcla de mariscos, pa' la sopa o el arroz 🥘</p>
             <div class="product-footer">
-              <span class="product-price">₡7,200<small>/kg</small></span>
-              <button class="btn-add" data-id="mixtos" data-name="Mariscos Mixtos" data-price="7200" aria-label="Agregar mariscos mixtos al carrito">
+              <span class="product-price">₡6,000<small>/kg</small></span>
+              <button class="btn-add" data-id="mariscada" data-name="Mariscada" data-price="6000" aria-label="Agregar mariscada al carrito">
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Camarón pelado -->
+        <article class="product-card reveal" data-cat="mariscos" data-product-id="camaron-pelado">
+          <div class="product-img-wrap">
+            <img src="assets/img/seafood-shrimp.jpg" alt="Camarón pelado fresco" loading="lazy" />
+            <span class="product-badge badge-gold">⭐ Premium</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Camarón Pelado</h3>
+            <p class="product-desc">Limpio y pelado, listo para cocinar 🍚</p>
+            <div class="product-footer">
+              <span class="product-price">₡10,000<small>/kg</small></span>
+              <button class="btn-add" data-id="camaron-pelado" data-name="Camarón Pelado" data-price="10000" aria-label="Agregar camarón pelado al carrito">
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cabezas de pescado -->
+        <article class="product-card reveal" data-cat="otros" data-product-id="cabezas-pescado">
+          <div class="product-img-wrap">
+            <img src="assets/img/seafood-fish.jpg" alt="Cabezas de pescado" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Cabezas de Pescado</h3>
+            <p class="product-desc">Perfectas para un buen caldo casero 🍲</p>
+            <div class="product-footer">
+              <span class="product-price">₡2,000<small>/kg</small></span>
+              <button class="btn-add" data-id="cabezas-pescado" data-name="Cabezas de Pescado" data-price="2000" aria-label="Agregar cabezas de pescado al carrito">
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Recortes de pescado -->
+        <article class="product-card reveal" data-cat="otros" data-product-id="recortes-pescado">
+          <div class="product-img-wrap">
+            <img src="assets/img/seafood-fish.jpg" alt="Recortes de pescado" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Recortes de Pescado</h3>
+            <p class="product-desc">Económicos, rinden para el arroz o sopa 💰</p>
+            <div class="product-footer">
+              <span class="product-price">₡1,300<small>/kg</small></span>
+              <button class="btn-add" data-id="recortes-pescado" data-name="Recortes de Pescado" data-price="1300" aria-label="Agregar recortes de pescado al carrito">
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Huevos de tortuga (temporada) -->
+        <article class="product-card reveal" data-cat="otros" data-product-id="huevos-tortuga">
+          <div class="product-img-wrap">
+            <img src="assets/img/seafood-ceviche.jpg" alt="Huevos de tortuga de temporada" loading="lazy" />
+            <span class="product-badge">📅 Temporada</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Huevos de Tortuga</h3>
+            <p class="product-desc">Disponibles solo por temporada 🐢</p>
+            <div class="product-footer">
+              <span class="product-price">₡400<small>/unidad</small></span>
+              <button class="btn-add" data-id="huevos-tortuga" data-name="Huevos de Tortuga" data-price="400" aria-label="Agregar huevos de tortuga al carrito">
                 <i class="fas fa-plus"></i> Agregar
               </button>
             </div>
@@ -363,6 +349,60 @@
     </div>
   </section>
 
+  <!-- ═══════════════════ PEDIDOS POR ENCARGO ═══════════════════ -->
+  <section class="encargo-section" id="encargos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-kicker">¿No lo ves en la lista?</p>
+        <h2 class="section-title">Pedidos <em>por encargo</em></h2>
+        <p class="section-sub">Armá tu pedido especial: agregá los productos que necesitás y te los conseguimos. Al final lo enviás por WhatsApp a Randall 🐟</p>
+      </div>
+
+      <div class="encargo-wrap reveal">
+        <form id="encargo-form" class="encargo-form">
+          <div class="encargo-fields">
+            <div class="form-group encargo-prod">
+              <label for="encargo-producto">Producto</label>
+              <input type="text" id="encargo-producto" placeholder="Ej. Pulpo, langostinos, atún..." autocomplete="off" />
+            </div>
+            <div class="form-group encargo-qty">
+              <label for="encargo-cantidad">Cantidad</label>
+              <input type="text" id="encargo-cantidad" placeholder="Ej. 2 kg, 3 unidades" autocomplete="off" />
+            </div>
+            <button type="submit" class="btn btn-primary encargo-add-btn">
+              <i class="fas fa-plus"></i> Añadir
+            </button>
+          </div>
+          <p class="encargo-note" id="encargo-note"></p>
+        </form>
+
+        <div class="encargo-list" id="encargo-list">
+          <div class="encargo-empty">Aún no has agregado productos a tu encargo 📝</div>
+        </div>
+
+        <div class="encargo-customer" id="encargo-customer" style="display:none;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="encargo-name">Tu nombre</label>
+              <input type="text" id="encargo-name" placeholder="Nombre completo" />
+            </div>
+            <div class="form-group">
+              <label for="encargo-phone">Tu teléfono</label>
+              <input type="tel" id="encargo-phone" placeholder="8888-8888" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="encargo-notas">Notas adicionales (opcional)</label>
+            <textarea id="encargo-notas" rows="2" placeholder="Fecha en que lo necesitás, detalles, etc."></textarea>
+          </div>
+          <button type="button" id="encargo-send" class="btn btn-primary encargo-send-btn">
+            <i class="fab fa-whatsapp"></i> Enviar encargo por WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════════════════ ENTREGAS ═══════════════════ -->
   <section class="delivery-section" id="entregas">
     <div class="container">
@@ -373,7 +413,7 @@
       <div class="delivery-grid">
         <div class="delivery-card reveal">
           <div class="delivery-icon">🏠</div>
-          <h3>Platanares de Moravia</h3>
+          <h3>Platanares de Heredia</h3>
           <p>Entrega súper rápida, somos de aquí mismo</p>
           <div class="delivery-details">
             <span class="delivery-cost">₡500</span>
@@ -382,8 +422,8 @@
         </div>
         <div class="delivery-card reveal">
           <div class="delivery-icon">🚗</div>
-          <h3>Moravia Centro</h3>
-          <p>Llegamos hasta el centro de Moravia sin problema</p>
+          <h3>Heredia Centro</h3>
+          <p>Llegamos hasta el centro de Heredia sin problema</p>
           <div class="delivery-details">
             <span class="delivery-cost">₡1,000</span>
             <span class="delivery-time">⏱ 30-45 min</span>
@@ -391,8 +431,8 @@
         </div>
         <div class="delivery-card reveal">
           <div class="delivery-icon">📍</div>
-          <h3>Coronado / Paracito</h3>
-          <p>Toda la zona de Coronado y alrededores</p>
+          <h3>San Rafael / alrededores</h3>
+          <p>Toda la zona de San Rafael de Heredia y alrededores</p>
           <div class="delivery-details">
             <span class="delivery-cost">₡1,500</span>
             <span class="delivery-time">⏱ 40-60 min</span>
@@ -450,7 +490,7 @@
           <div class="info-card reveal">
             <i class="fas fa-map-marker-alt info-icon"></i>
             <h4>Dirección</h4>
-            <p>Platanares de Moravia, Coronado<br>Zona de Paracito, San José<br>Costa Rica 🇨🇷</p>
+            <p>Platanares de San Rafael<br>Heredia<br>Costa Rica 🇨🇷</p>
           </div>
           <div class="info-card reveal">
             <i class="fas fa-clock info-icon"></i>
@@ -482,9 +522,9 @@
         </div>
         <div class="map-wrap reveal">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15714.21041804258!2d-84.00802988271484!3d9.959999999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f79a10ca9ddf%3A0x2200dfbd5d7e4fd4!2sMoravia%2C%20San%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1ses!2scr!4v1717700000000!5m2!1ses!2scr"
+            src="https://www.google.com/maps?q=Platanares,+San+Rafael,+Heredia,+Costa+Rica&z=14&output=embed"
             width="100%" height="400" style="border:0;" allowfullscreen=""
-            loading="lazy" title="Mapa Pescadería Ebenezer - Platanares de Moravia"
+            loading="lazy" title="Mapa Pescadería Ebenezer - Platanares de Heredia"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
@@ -501,7 +541,7 @@
         <span class="footer-fish">🐟</span>
         <div>
           <strong>Pescadería Ebenezer</strong>
-          <p>Platanares de Moravia, Coronado</p>
+          <p>Platanares de Heredia</p>
         </div>
       </div>
       <div class="footer-links">
@@ -597,9 +637,9 @@
             <label for="delivery-zone">Zona</label>
             <select id="delivery-zone" name="zone">
               <option value="">Seleccioná tu zona...</option>
-              <option value="platanares" data-cost="500">Platanares de Moravia (₡500)</option>
-              <option value="moravia" data-cost="1000">Moravia Centro (₡1,000)</option>
-              <option value="coronado" data-cost="1500">Coronado / Paracito (₡1,500)</option>
+              <option value="platanares" data-cost="500">Platanares de Heredia (₡500)</option>
+              <option value="heredia" data-cost="1000">Heredia Centro (₡1,000)</option>
+              <option value="sanrafael" data-cost="1500">San Rafael / alrededores (₡1,500)</option>
             </select>
           </div>
           <div class="form-group">
