@@ -53,7 +53,7 @@
     },
     "pulpo": {
       title: "Pulpo a la Gallega",
-      desc: "Pulpo cocido tierno, con aceite de oliva, pimentón y papas. Un viaje a Galicia sin salir de Coronado 🐙",
+      desc: "Pulpo cocido tierno, con aceite de oliva, pimentón y papas. Un viaje a Galicia sin salir de Heredia 🐙",
       img: "assets/img/seafood-octopus.jpg",
       ingredients: ["Pulpo fresco", "Papas", "Pimentón dulce", "Aceite de oliva", "Sal gruesa", "Laurel"]
     },
@@ -83,7 +83,7 @@
     },
     "mixtos": {
       title: "Sopa de Mariscos",
-      desc: "Sopa espesa y reconfortante con todos los mariscos. La mejor para un día lluvioso en Moravia ☔🍲",
+      desc: "Sopa espesa y reconfortante con todos los mariscos. La mejor para un día lluvioso en Heredia ☔🍲",
       img: "assets/img/seafood-shrimp.jpg",
       ingredients: ["Mariscos mixtos", "Leche de coco", "Papa", "Culantro", "Ajo", "Cebolla"]
     }
