@@ -668,6 +668,52 @@ ul { list-style: none; }
   .recipe-modal-content { grid-template-columns: 1fr; }
   .recipe-img-wrap { aspect-ratio: 16/9; }
 }
+/* ─── Pedidos por encargo ─── */
+.encargo-section {
+  position: relative;
+  background: var(--bg-section);
+  padding: 5rem 0;
+}
+.encargo-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+.encargo-fields {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.encargo-fields .form-group { margin-bottom: 0; }
+.encargo-fields .encargo-prod { flex: 2 1 220px; }
+.encargo-fields .encargo-qty { flex: 1 1 130px; }
+.encargo-add-btn { flex: 0 0 auto; padding-top: 0.7rem; padding-bottom: 0.7rem; white-space: nowrap; }
+.encargo-note { color: var(--error); font-size: 0.82rem; margin-top: 0.6rem; min-height: 1rem; }
+.encargo-list { margin: 1.5rem 0; display: flex; flex-direction: column; gap: 0.6rem; }
+.encargo-empty {
+  text-align: center; color: var(--ink-mute);
+  padding: 1.5rem; border: 1.5px dashed var(--ocean-light);
+  border-radius: var(--radius-sm); font-size: 0.9rem;
+}
+.encargo-item {
+  display: flex; align-items: center; gap: 0.8rem;
+  background: var(--ocean-pale); border-radius: var(--radius-sm);
+  padding: 0.7rem 1rem;
+}
+.encargo-item-name { flex: 1; font-weight: 600; color: var(--ink-soft); }
+.encargo-item-qty { font-weight: 700; color: var(--ocean-deep); white-space: nowrap; }
+.encargo-remove {
+  color: var(--error); font-size: 0.95rem; padding: 0.3rem;
+  transition: transform var(--transition);
+}
+.encargo-remove:hover { transform: scale(1.2); }
+.encargo-customer { border-top: 1.5px solid var(--ocean-pale); padding-top: 1.2rem; margin-top: 0.5rem; }
+.encargo-send-btn { width: 100%; justify-content: center; margin-top: 0.5rem; }
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
@@ -683,6 +729,8 @@ ul { list-style: none; }
   .delivery-grid { grid-template-columns: 1fr 1fr; }
   .products-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .modal-box { padding: 1.5rem; border-radius: 16px; }
+  .encargo-wrap { padding: 1.3rem; }
+  .encargo-add-btn { width: 100%; }
 }
 @media (max-width: 420px) {
   .products-grid { grid-template-columns: 1fr; }
