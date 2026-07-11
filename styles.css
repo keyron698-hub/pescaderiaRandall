@@ -310,6 +310,12 @@ ul { list-style: none; }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .reveal[data-split] { opacity: 1; transform: none; }
 
+/* ─── Cómo funciona ─── */
+.how-section {
+  background: var(--bg-section);
+  padding: 4rem 0;
+}
+
 /* ─── Products Section ─── */
 .products-section {
   position: relative;
@@ -721,6 +727,7 @@ ul { list-style: none; }
   .tracking-steps { gap: 0.3rem; }
   .step-arrow { font-size: 0.9rem; }
   .tracking-step p { font-size: 0.72rem; }
+  .how-section { padding: 3rem 0; }
   .delivery-section { padding: 3rem 0; }
   .encargo-section { padding: 3rem 0; }
   .info-section { padding: 1rem 0 3rem; }
